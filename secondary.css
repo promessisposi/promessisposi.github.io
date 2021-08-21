@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 170%;
+    background-color: white;
+
+    padding-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: 'Playfair Display', serif;
+}
+
+body.dark svg path {
+    fill: white;
+}
+body.dark {
+    background-color: rgb(32,34,37);
+    color: white;
+    border: white;
+}   
+body.dark * {
+    background-color: rgb(32,34,37);
+    color: white;
+    border: white;
+}
+body.dark hr {
+    border: 0.01px solid white;
+    border-color: white;
+    color: white;
+    background-color: white;
+}
+body.dark a:hover {
+    color: turquoise;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+h1 {
+    font-size: 50px;
+}
+button {
+    font-family: 'Playfair Display', serif;
+}
+button:hover, button:focus {
+    outline: none;
+    cursor: pointer;
+}
+/*Header*/
+p, a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+nav button {
+    background-color: transparent;
+    border: 0;
+}
+nav a:hover {
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+body.dark nav a:hover {
+    color: turquoise;
+    border-bottom: 1px solid turquoise;
+}
+a h2:hover i {
+    color: gray;
+}
+body.dark a h2:hover i {
+    color: turquoise;
+}
+/*Main*/
+main strong {
+    font-weight: 600;
+    background-color: rgba(64, 224, 208, 0.515);
+}
+body.dark main strong {
+    background-color: rgba(64, 224, 208, 0.515);
+}
+.seekey {
+    cursor: pointer;
+}
+.seekey:hover {
+    color: gray
+}
+body.dark .seekey:hover {
+    color: turquoise;
+}
+/*Next*/
+.next {
+    width: 100%;
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+/*Media Queries*/
+@media (max-width: 800px) {
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }   
+}
+
+@media (max-width: 700px) {
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    p, a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

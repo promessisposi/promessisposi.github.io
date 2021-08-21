@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 170%;
+    background-color: white;
+
+    padding-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: 'Playfair Display', serif;
+}
+body.dark svg path {
+    fill: white;
+}
+body.dark {
+    background-color: rgb(32,34,37);
+    color: white;
+    border: white;
+}   
+body.dark * {
+    background-color: rgb(32,34,37);
+    color: white;
+    border: white;
+}
+body.dark hr {
+    border: 0.01px solid white;
+    border-color: white;
+    color: white;
+    background-color: white;
+}
+body.dark a:hover {
+    color: turquoise;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+h1 {
+    font-size: 50px;
+}
+button {
+    font-family: 'Playfair Display', serif;
+}
+button:hover, button:focus {
+    outline: none;
+    cursor: pointer;
+}
+/*Header*/
+/*.logo {
+    width: 75px;
+    min-width: 75px;
+    height: 75px;
+    min-height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    display:inline-block;
+    vertical-align:middle;
+  }
+.logo img{
+width:100%;
+}*/
+p, a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+nav button {
+    background-color: transparent;
+    border: 0;
+}
+nav a:hover {
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+body.dark nav a:hover {
+    color: turquoise;
+    border-bottom: 1px solid turquoise;
+}
+/*Hero*/
+.title {
+    display: flex;
+    justify-content: center;
+}
+.hero img{
+    width: 70%;
+}
+.hero .desc {
+    width: 25%;
+    font-size: 16px;
+}
+.desc button {
+    background-color: transparent;
+    border: 0;
+    color: black;
+}
+.desc button:hover a {
+    color: gray;
+}
+body.dark .desc button:hover a {
+    color: turquoise;
+}
+/*Characters*/
+.characters img {
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+    min-height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display:inline-block;
+    vertical-align:middle;
+    border: 3px dashed gray;
+}
+body.dark .characters img {
+    border: 3px dashed turquoise;
+}
+.center {
+    text-align: center;
+}
+.names {
+    font-size: 20px;
+}
+.hover:hover {
+    opacity: 0.6;
+}   
+.item-fade {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+/*Other*/
+a h2:hover i {
+    color: gray;
+}
+body.dark a h2:hover i {
+    color: turquoise;
+}
+
+/*Media Queries*/
+@media (max-width: 1300px) {
+ 
+    .hero {
+        display: inline;
+        text-align: left;
+    }
+    .hero .desc {
+        width: 100%;
+        font-size: 16px;
+    }
+    .hero img{
+        width: 100%;
+    }
+    .characters img {
+        width: 100px;
+        min-width: 100px;
+        height: 100px;
+        min-height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        display:inline-block;
+        vertical-align:middle;
+        border: 3px dashed gray;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .characters {
+        display: inline ;
+    }
+    .characters img {
+        width: 100px;
+        min-width: 100px;
+        height: 100px;
+        min-height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        display:inline-block;
+        vertical-align:middle;
+        border: 3px dashed gray;
+    }
+    .characters span {
+        display: flex;
+    }
+    .characters span hr {
+        border: 0;
+        border-color: transparent;
+        color: transparent;
+        background-color: transparent;
+    }
+    body.dark .characters span hr {
+        border: 0;
+        border-color: transparent;
+        color: transparent;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    p, a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
