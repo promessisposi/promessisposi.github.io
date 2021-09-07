@@ -1,0 +1,106 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    height: 170%;
+    background-color: white;
+
+    padding-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: "Playfair Display", serif;
+    color: black;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+h1 {
+    font-size: 50px;
+}
+h1, h2, h3 {
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(32,34,37);
+}
+p, a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(58, 98, 158);
+    border-bottom: 1px solid rgb(58, 98, 158);
+}
+.center {
+    text-align: center;
+}
+.title {
+    display: flex;
+    justify-content: center;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+nav {
+    display: flex; justify-content: space-evenly
+}
+.section {
+    text-align: center;
+    margin: 20px;
+}
+.section img {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display:inline-block;
+    vertical-align:middle;
+    border: 0px solid black;
+}
+.hero img{
+    width: 60%;
+}
+.hero .desc {
+    width: 35%;
+    font-size: 16px;
+}
+.next {
+    width: 100%;
+    text-align: center;
+}
+h2 a {
+    font-size: 30px;
+}
+
+/*Media Queries*/
+@media (max-width: 800px) {
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    p, a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
